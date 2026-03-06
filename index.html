@@ -108,6 +108,21 @@
                 <h1>Multi-Threading</h1>
                 <h3 class="highlight">& Synchronisation</h3>
                 <p>Maîtriser l'exécution parallèle et éviter le chaos.</p>
+
+                <div style="margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px;">
+                    <p style="font-size: 0.7em; color: #ff79c6; margin-bottom: 10px;">Présenté par :</p>
+                    <div
+                        style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; font-size: 0.6em; font-weight: bold; color: rgba(255,255,255,0.8);">
+                        <span style="background: rgba(255,121,198, 0.2); padding: 5px 15px; border-radius: 20px;">👤
+                            Nacim Oualla</span>
+                        <span style="background: rgba(255,121,198, 0.2); padding: 5px 15px; border-radius: 20px;">👤
+                            Essaqy Douae</span>
+                        <span style="background: rgba(255,121,198, 0.2); padding: 5px 15px; border-radius: 20px;">👤
+                            Yassmine Mouden</span>
+                        <span style="background: rgba(255,121,198, 0.2); padding: 5px 15px; border-radius: 20px;">👤
+                            Ouachikh Zakaria</span>
+                    </div>
+                </div>
             </section>
 
             <section data-transition="slide">
@@ -120,6 +135,27 @@
                     <li class="fragment fade-up"><em>Attention :</em> Les threads partagent le même espace mémoire !
                     </li>
                 </ul>
+            </section>
+
+            <section data-transition="slide">
+                <h2>Cas d'usage <span class="highlight">Pratiques</span></h2>
+                <div class="card-container" style="margin-top: 20px;">
+                    <div class="card fragment fade-up">
+                        <h4 class="highlight">Jeux Vidéo 🎮</h4>
+                        <p style="font-size: 0.8em;">Rendu graphique, physique, IA et son, chacun calculé sur un thread
+                            différent.</p>
+                    </div>
+                    <div class="card fragment fade-up" data-fragment-index="1">
+                        <h4 class="highlight">Serveurs Web 🌐</h4>
+                        <p style="font-size: 0.8em;">Apache ou Tomcat: chaque requête cliente est traitée par un thread
+                            distinct.</p>
+                    </div>
+                    <div class="card fragment fade-up" data-fragment-index="2">
+                        <h4 class="highlight">Big Data 📊</h4>
+                        <p style="font-size: 0.8em;">Traitement massivement parallèle de données, encodage vidéo, rendu
+                            3D.</p>
+                    </div>
+                </div>
             </section>
 
             <section>
@@ -246,7 +282,8 @@
                     <li class="fragment highlight-current-blue">Garder les sections critiques (verrouillées) très
                         courtes.</li>
                     <li class="fragment highlight-current-blue">Toujours utiliser <code>unlock()</code> dans un bloc
-                        <code>finally</code>.</li>
+                        <code>finally</code>.
+                    </li>
                 </ul>
                 <h3 class="fragment fade-up success" style="margin-top: 40px;">Merci !</h3>
             </section>
